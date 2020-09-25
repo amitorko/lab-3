@@ -24,12 +24,15 @@ public class AddressBook{
         return result.toString();
     }
     public static void main(String [] args){
-        System.out.println("address book");
+        BuddyInfo orko = new BuddyInfo("Orko");
+        BuddyInfo tom = new BuddyInfo("Tom");
+        AddressBook addr = new AddressBook();
+        addr.addBuddy(tom);
+        addr.addBuddy(orko);
+        addr.removeBuddy(tom);
+        System.out.println(addr);
 
     }
-
-
-
 
 
 }
