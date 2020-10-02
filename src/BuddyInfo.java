@@ -33,5 +33,7 @@ public class BuddyInfo {
     public String toString(){
         return this.name;
     }
-
+    public static void main(String[] args) {
+        BuddyInfo buddy = new BuddyInfo("orko");
+    }
 }
